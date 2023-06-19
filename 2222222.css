@@ -1,0 +1,237 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  width: 1520px;
+  height: 100px;
+  min-width: 1020px;
+  display: flex;
+  gap: 10px;
+}
+
+.left {
+  width: 1020px;
+  height: 100px; 
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+#product-input {
+  width: 74%;
+  height: 64px;
+  font-size: 35px;
+  margin-left: 15px;
+}
+
+#add-button {
+  background-color: blue;
+  color: white;
+  width: 22%;
+  height: 70px;
+  font-size: 35px;
+  margin-left: 7px;
+}
+
+.new-window {
+  width: 1020px;
+  height: 100px;
+  margin-top: 2px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 400px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-family: "Arial", sans-serif;
+  border: 0;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.quantity-button {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.increment-button {
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+}
+
+.cancel-button {
+  background-color: red;
+  text-align: center;
+  position: relative;
+  right: 15px;
+}
+
+.bought-button {
+  width: 160px;
+  background-color: lightgray;
+  text-decoration: none;
+  /* font-size: 25px; */
+  position: fixed;
+  margin-left: 770px;
+}
+.not-bought-button {
+  width: 160px;
+  background-color: lightgray;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.quantity-input {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #ccc;
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 0;
+  margin: 15px 15px;
+}
+
+.item-name {
+  font-family: "Arial", sans-serif;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.sub-box {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1px;
+}
+
+.sub-box1 {
+  min-height: 100px;
+  height: auto;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1px;
+  font-size: 30px;
+}
+.sub-box2 {
+  min-height: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1px;
+}
+.fruit {
+  position: relative;
+  margin-left: 30px;
+  top: 33px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.lighter {
+  background-color: #f36f6f !important;
+  color: #101010 !important;
+}
+.sub-box2 .added-text {
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  /* margin-left: 20px; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-wrap: nowrap;
+}
+.new-window .item-name.bought {
+  text-decoration: line-through;
+}
+.badge {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: inline-block;
+  padding: 10px;
+  background-color: darkviolet;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.badge:hover {
+  background-color: rgb(25, 30, 109);
+  transform: translateY(-10px);
+}
+
+.badge-info {
+  display: none;
+  padding-top: 5px;
+}
+
+.badge:hover .badge-info {
+  display: block;
+}
+
+.badge-info span {
+  display: block;
+}
+
+@media print {
+ 
+  .badge {
+    background-color: white;
+    color: darkviolet;
+    border: 2px solid darkviolet;
+  }
+
+  .badge .badge-text {
+    display: none;
+  }
+
+  .badge-info {
+    display: block;
+    color: darkviolet;
+  }
+}
+ 
+  
+  
+  
